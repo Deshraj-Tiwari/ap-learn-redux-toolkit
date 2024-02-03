@@ -1,0 +1,8 @@
+.userDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.userDetails ul li {
+  width: 50vw;
+}/*# sourceMappingURL=UserDetails.css.map */

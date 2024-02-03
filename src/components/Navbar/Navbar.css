@@ -1,7 +1,7 @@
-.container-fluid {
+.navContainer {
   border: 1px solid black;
   font-family: Ubuntu;
 }
-.container-fluid p {
+.navContainer p {
   font-weight: bolder;
-}/*# sourceMappingURL=Navbar.css.map */
+} /*# sourceMappingURL=Navbar.css.map */
