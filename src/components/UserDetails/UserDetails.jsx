@@ -10,7 +10,9 @@ export default function UserDetails() {
         className="container mt-4 d-flex justify-content-between"
       >
         <h5 className="d-inline">List of User Details</h5>
-        <button className="btn btn-sm btn-primary d-inline">Add User</button>
+        <button className="btn btn-sm btn-primary d-inline">
+          Add New User
+        </button>
       </div>
       <br />
       <div className="container userDetails d-flex justify-content-center">

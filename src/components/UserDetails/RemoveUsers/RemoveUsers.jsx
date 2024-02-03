@@ -7,7 +7,7 @@ export default function RemoveUsers() {
       className="container d-flex justify-content-between"
     >
       <span>&nbsp;</span>
-      <button className="btn btn-danger btn-sm">Delete All</button>
+      <button className="btn btn-danger btn-sm">Delete All Users</button>
     </div>
   );
 }
