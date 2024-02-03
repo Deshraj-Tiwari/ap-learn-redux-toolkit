@@ -1,10 +1,9 @@
-import { useState } from "react";
-import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <h1>Admin Panel</h1>
+      <Navbar />
     </>
   );
 }
