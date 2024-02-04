@@ -1,10 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeUser } from "../../../store/slices/UserSlice";
 
 export default function DisplayUsers() {
   const data = useSelector((state) => {
     return state.users;
   });
+
+  const dispatch = useDispatch();
+
+  const removeOneUser = (toRemove) => {
+    dispatch(removeUser(toRemove));
+  };
 
   return (
     <>
@@ -15,7 +22,10 @@ export default function DisplayUsers() {
             className="list-group-item d-flex justify-content-between"
           >
             {user}
-            <button className="btn btn-sm btn-danger">
+            <button
+              onClick={() => removeOneUser(user)}
+              className="btn btn-sm btn-danger"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"

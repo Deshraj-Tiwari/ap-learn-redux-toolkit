@@ -7,9 +7,11 @@ export const userSlice = createSlice({
     addUser(state, action) {
       state.push(action.payload);
     },
-    removeUser(state, action) {},
+    removeUser(state, action) {
+      return state.filter((user) => user != action.payload);
+    },
     deleteAll(state, action) {},
   },
 });
 
-export const { addUser } = userSlice.actions;
+export const { addUser, removeUser, deleteAll } = userSlice.actions;
