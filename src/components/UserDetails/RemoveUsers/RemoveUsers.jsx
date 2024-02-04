@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteAll } from "../../../store/slices/UserSlice";
+import { deleteAll } from "../../../store/actions";
+// import { deleteAll } from "../../../store/slices/UserSlice";
 
 export default function RemoveUsers() {
   const dispatch = useDispatch();
