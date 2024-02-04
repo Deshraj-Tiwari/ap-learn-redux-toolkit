@@ -10,7 +10,9 @@ export const userSlice = createSlice({
     removeUser(state, action) {
       return state.filter((user) => user != action.payload);
     },
-    deleteAll(state, action) {},
+    deleteAll(state, action) {
+      return (state = []);
+    },
   },
 });
 
